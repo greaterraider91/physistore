@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
   <featured-text id="letsgetdriving">Let's Get Driving!</featured-text>
-  <item featid="letsgetdriving">
+  <item storeid="superspeed" featid="letsgetdriving">
     <label>Super Speed</label>
     <picture>./superspeed.png</picture>
     <short-desc>"Gas, gas, gas, i'm gonna step on the gas!"</short-desc>
+  </item>
+  <item storeid="superspeed" featid="letsgetdriving">
+    <label>Strong Guy</label>
+    <picture>./strongguy.png</picture>
+    <short-desc>Guy, not little... now he's a Big Guy!</short-desc>
+  </item>
+  <item storeid="superspeed" featid="letsgetdriving">
+    <label>Big Car</label>
+    <picture>./bigcar.png</picture>
+    <short-desc>My car is bigger! Hahah!</short-desc>
   </item>
 </store>
