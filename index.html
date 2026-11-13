@@ -14,20 +14,20 @@
             && 
             this.status == 200) {
                 let xmlDoc = this.responseXML;
-                let titles = xmlDoc
-                .getElementsByTagName("title");
-                let author = xmlDoc
-                .getElementsByTagName("author");
-                for (var i = 0; i < titles.length; i++) {
-                    console.log(`${titles[i]
+                let labels = xmlDoc
+                .getElementsByTagName("label");
+                let short-desc = xmlDoc
+                .getElementsByTagName("short-desc");
+                for (var i = 0; i < labels.length; i++) {
+                    console.log(`${labels[i]
                         .childNodes[0]
-                        .nodeValue} Book is written by ${author[i]
+                        .nodeValue} ${short-desc[i]
                             .childNodes[0]
                             .nodeValue} `);
                 }
             }
         };
-        xhttp.open("GET", "data.xml", true);
+        xhttp.open("GET", "PHYSISTORE-featured.xml", true);
         xhttp.send();
 </script>
 
